@@ -84,7 +84,7 @@ function queryWikiApi(author) {
     const apiEndpoint = 'https://en.wikipedia.org/w/api.php?';
     const authorName = author.replace(/\s/g, '%20');
     const imageSize = 150;
-    const query = 'action=query&redirects&format=json&formatversion=2&prop=pageimages&pithumbsize=' + imageSize + '&titles=' + authorName;
+    const query = 'action=query&origin=*&redirects&format=json&formatversion=2&prop=pageimages&pithumbsize=' + imageSize + '&titles=' + authorName;
     const fullUrl = apiEndpoint + query;
 
     fetch(fullUrl)
