@@ -1,5 +1,9 @@
 /* Global */
 
+html {
+  transition: background-color 0.15s ease-in;
+}
+
 body {
   background-color: white;
   color: #444;
@@ -9,10 +13,8 @@ body {
   padding: 50px;
 }
 
-html {
-  /* background-color: hsl(174, 51%, 48%); */
-  -webkit-transition: background-color 0.15s ease-in;
-  transition: background-color 0.15s ease-in;
+main {
+  position: relative;
 }
 
 h1 {
@@ -23,26 +25,18 @@ h1 {
   text-align: center;
 }
 
-main {
-  position: relative;
-}
-
 /* Quote container */
 
 #quote {
   clear: both;
   max-height: 1000px;
-  -webkit-transition: opacity 1.25s, max-height 0.3s;
   transition: opacity 1.25s, max-height 0.3s;
 }
 
 #quote.hidden {
   opacity: 0;
   max-height: 1px;
-  -webkit-transition: 0.25s;
   transition: 0.25s;
-
-  /* transition: opacity 0.1s, max-height 0.1s; */
 }
 
 /* Quote image */
@@ -53,7 +47,6 @@ main {
 
 img {
   border-radius: 3px;
-  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   margin-left: 20px;
 }
@@ -82,12 +75,8 @@ img {
 
 .quote-mark.top {
   float: left;
-  -moz-transform: scaleX(-1) scaleY(-1);
-  -ms-transform: scaleX(-1) scaleY(-1);
-  -o-transform: scaleX(-1) scaleY(-1);
   position: relative;
   transform: scaleX(-1) scaleY(-1);
-  -webkit-transform: scaleX(-1) scaleY(-1);
   z-index: 99;
 }
 
@@ -98,26 +87,19 @@ img {
 /* Buttons */
 
 .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 10px 0;
 }
 
 button {
-  /* background-color: hsl(174, 51%, 48%); */
   border: none;
   border-radius: 3px;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
   color: white;
   cursor: pointer;
   font-family: inherit;
   font-size: 0.8em;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   letter-spacing: 0.03em;
   line-height: 36px;
@@ -125,7 +107,6 @@ button {
   max-width: 200px;
   padding: 5px 15px;
   text-transform: uppercase;
-  -webkit-transition: all 0.1s ease-in, background-color 0.15s ease-in;
   transition: all 0.1s ease-in, background-color 0.15s ease-in;
   width: 180px;
 }
@@ -135,18 +116,15 @@ button:focus {
 }
 
 button:hover:not(.disabled) {
-  -webkit-filter: brightness(110%);
   filter: brightness(110%);
 }
 
 button:active:not(.disabled) {
-  -webkit-filter: brightness(120%);
   filter: brightness(120%);
 }
 
 button.disabled {
   background-color: #dfdfdf;
-  -webkit-box-shadow: none;
   box-shadow: none;
   color: #9f9f9f;
   cursor: default;
@@ -175,16 +153,13 @@ button i.right {
   padding: 0 50px 50px 50px;
   position: absolute;
   top: 100%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-transition-delay: -0.1s;
   transition-delay: -0.1s;
   width: 500px;
 }
 
 #slide-container.hidden {
   top: 0;
-  -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
 
