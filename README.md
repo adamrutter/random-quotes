@@ -2,7 +2,7 @@
 
 ## Overview
 
-A small project built whilst learning JavaScript basics. It was inspired by the freeCodeCamp Random Quote Machine project and uses the Wikipedia API
+A small project built whilst learning JavaScript basics. It was inspired by the freeCodeCamp Random Quote Machine project and uses the Wikipedia API.
 
 The project can be found [here](#).
 
@@ -34,11 +34,11 @@ if (pageExists && imagePresent) {
 
 The 'Learn More' button opens the author's Wikipedia entry (if one is available) in a new tab.
 
-A function `learnMoreState(author, pageExists)` is called to determine whether should the button should be active or not (based on whether the page exists). If it is active, it links to the Wikipedia entry; if it is inactive, the `disabled` class is added to the element and it is restyled.
+A function `learnMoreState(author, pageExists)` is called to determine whether the button should be active or not (based on the existence of the page). If it is active, it links to the Wikipedia entry; if it is inactive, the `disabled` class is added to the element and it is restyled.
 
 ## Colour
 
-On producing a new quote, a new colour is chosen randomly for the buttons and background. This is done by setting a new `style.backgroundColor` on relevant elements, defined using the CSS `hsl` function with a random number between 0 and 359 as the hue.
+On producing a quote, a new colour is chosen randomly for the buttons and background. This is done by setting a new `style.backgroundColor` on relevant elements, defined using the CSS `hsl` function with a random number between 0 and 359 as the hue.
 
 ```javascript
 const randomNum = Math.floor(Math.random() * 359);
