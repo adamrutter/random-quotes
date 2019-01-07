@@ -117,7 +117,7 @@ function queryWikiApi(author) {
 }
 
 // Generate new quote and append it to the document
-const quotesUrl = 'https://gitlab.com/adamrutter/random-quotes/raw/master/quotes.json';
+const quotesUrl = 'https://glcdn.githack.com/adamrutter/random-quotes/raw/master/quotes.json';
 
 function newQuote() {
   fetch(quotesUrl)
