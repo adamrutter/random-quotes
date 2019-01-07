@@ -197,7 +197,6 @@ learnMoreButton.addEventListener('click', () => {
   if (!learnMoreButton.classList.contains('disabled')) {
     const searchTerm = author.textContent.toLowerCase().replace(/\s+/g, '_');
     const fullUrl = wikiUrl + searchTerm;
-    console.log(author);
 
     window.open(fullUrl);
   }
