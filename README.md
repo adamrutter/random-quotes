@@ -14,6 +14,8 @@ If you want to install the project locally, you can:
 2. `cd random-quotes`
 3. `npm install`
 
+*Note: npm is only used to install eslint, so you could skip this step if you wanted.*
+
 ## Wikipedia API
 
 The Wikipedia API is used to enhance user experience. It is queried to try and find an entry on the author of the quote.
