@@ -14,7 +14,7 @@ function slideDown() {
 
 // Change the primary color
 function changeColor() {
-  const randomNum = Math.floor(Math.random() * 360);
+  const randomNum = Math.floor(Math.random() * 359);
   const newColor = 'hsl(' + randomNum + ', 51%, 48%)';
   const buttons = document.querySelectorAll('button');
 
