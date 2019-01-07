@@ -1,5 +1,8 @@
 {
   "extends": "airbnb",
+  "parserOptions": {
+   "ecmaVersion": 6
+  },
   "env": {
     "browser": true,
     "node": true,
@@ -13,12 +16,11 @@
       "requireParamDescription": true,
       "requireReturnDescription": true
     }],
-    "require-jsdoc": ["error", {
-        "require": {
-            "FunctionDeclaration": true,
-            "MethodDefinition": true,
-            "ClassDeclaration": true
-        }
-    }]
+    "prefer-template": off,
+    "no-param-reassign": off,
+    "no-plusplus": [
+      "error",
+      { "allowForLoopAfterthoughts": true }
+    ]
   }
 }
