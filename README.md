@@ -1,6 +1,18 @@
 # Random Quotes
 
-A small project built whilst learning JavaScript basics. It was inspired by the freeCodeCamp Random Quote Machine project and uses the Wikipedia API.
+## Overview
+
+A small project built whilst learning JavaScript basics. It was inspired by the freeCodeCamp Random Quote Machine project and uses the Wikipedia API
+
+The project can be found [here](#).
+
+### Installation
+
+If you want to install the project locally, you can:
+
+1. `git clone https://gitlab.com/adamrutter/random-quotes.git`
+2. `cd random-quotes`
+3. `npm install`
 
 ## Wikipedia API
 
