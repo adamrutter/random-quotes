@@ -6,6 +6,8 @@ A small project built whilst learning JavaScript basics. It was inspired by the 
 
 The project can be found [here](#).
 
+![](example.png)
+
 ### Installation
 
 If you want to install the project locally, you can:
