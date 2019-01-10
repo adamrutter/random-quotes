@@ -4,7 +4,7 @@
 
 A small project built whilst learning JavaScript basics. It was inspired by the freeCodeCamp Random Quote Machine project and uses the Wikipedia API.
 
-The project can be found [here](#).
+The project can be found [here](https://adams-random-quotes.netlify.com/).
 
 ![](example.png)
 
